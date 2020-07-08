@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap");
+body {
+  background-image: url(/images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-color: #ff7a7a;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  body {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-position-x: 12px;
+  }
+}
+
+a {
+  font-weight: 600;
+  color: #ff7a7a;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.752fr 1.248fr;
+      grid-template-rows: 0.752fr 1.248fr;
+  gap: 1px 1px;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 87.467vw;
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    width: 77.083vw;
+    -ms-grid-columns: 1.1fr 0.9fr;
+        grid-template-columns: 1.1fr 0.9fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    justify-items: left;
+  }
+}
+
+.wrapper .text-container {
+  text-align: center;
+  color: white;
+  width: inherit;
+}
+
+@media (min-width: 992px) {
+  .wrapper .text-container {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.wrapper .text-container .title {
+  font-size: 1.72rem;
+  line-height: 36px;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.01px;
+}
+
+@media (min-width: 992px) {
+  .wrapper .text-container .title {
+    font-size: 3.05rem;
+    line-height: 54px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.wrapper .text-container .desc {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 21px;
+  margin-bottom: -25px;
+  letter-spacing: 0.09px;
+}
+
+@media (min-width: 992px) {
+  .wrapper .text-container .desc {
+    margin-top: 31px;
+    margin-bottom: -6px;
+    letter-spacing: 0.03;
+  }
+}
+
+.wrapper .signup-section {
+  width: inherit;
+}
+
+@media (min-width: 992px) {
+  .wrapper .signup-section {
+    width: 37.5vw;
+  }
+}
+
+.wrapper .signup-section .free {
+  border: 0;
+  background-color: #6055a5;
+  padding: 19px 60px 17px 60px;
+  font-size: 0.95rem;
+  line-height: 26px;
+  font-weight: 400;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  margin-bottom: 17px;
+  -webkit-box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.2px;
+  width: auto;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .wrapper .signup-section .free {
+    margin-bottom: 24px;
+    padding: 18px 60px 16px 60px;
+  }
+}
+
+.wrapper .signup-section .form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 17px 24px;
+  -webkit-box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 9px 0px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin: 7px 0 62px 0;
+}
+
+@media (min-width: 992px) {
+  .wrapper .signup-section .form {
+    margin: 0;
+    padding: 30px 40px 37px 40px;
+  }
+}
+
+.wrapper .signup-section .form .form-control {
+  text-align: center;
+  padding: 8px 0;
+  position: relative;
+}
+
+.wrapper .signup-section .form .form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .wrapper .signup-section .form .form-control {
+    padding: 10px 0;
+  }
+}
+
+.wrapper .signup-section .form .form-control input {
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  color: #3e3c49;
+  font-size: 0.9rem;
+  font-family: inherit;
+  font-weight: 600;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 16px 17px;
+  width: 100%;
+}
+
+.wrapper .signup-section .form .form-control input:focus {
+  border: 1px solid #3e3c49;
+}
+
+@media (min-width: 992px) {
+  .wrapper .signup-section .form .form-control input {
+    padding: 16px 31px;
+  }
+}
+
+.wrapper .signup-section .form .form-control .ror {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  text-align: right;
+  font-size: 0.7rem;
+  font-style: italic;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.wrapper .signup-section .form .form-control.success i.fa-check-circle {
+  color: #38cc8c;
+  visibility: visible;
+}
+
+.wrapper .signup-section .form .form-control.success input {
+  border-color: #38cc8c;
+  color: #38cc8c;
+}
+
+.wrapper .signup-section .form .form-control.error i.fa-exclamation-circle {
+  color: #ff7a7a;
+  visibility: visible;
+}
+
+.wrapper .signup-section .form .form-control.error input {
+  border-color: #ff7a7a;
+  color: #ff7a7a;
+}
+
+.wrapper .signup-section .form .form-control.error .ror {
+  visibility: visible;
+  position: relative;
+  color: #ff7a7a;
+}
+
+.wrapper .signup-section .form .submit {
+  text-align: center;
+  width: 100%;
+  border: 0;
+  background-color: #38cc8c;
+  padding: 18px 15px 11px 15px;
+  font-size: 0.95rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: 5px;
+  margin: 8px 0;
+  -webkit-box-shadow: 0px 4px 0px 0px rgba(30, 178, 117, 0.9);
+          box-shadow: 0px 4px 0px 0px rgba(30, 178, 117, 0.9);
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+  .wrapper .signup-section .form .submit {
+    margin: 10px 0;
+  }
+}
+
+.wrapper .signup-section .form .terms-text {
+  font-size: 0.68rem;
+  color: #b9b6d3;
+  font-weight: 500;
+  padding: 0 20px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+/*# sourceMappingURL=style.css.map */
